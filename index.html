@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Islamic Wedding - Aishatu & Mohammed</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+    header {
+      background: #006d5b;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: url('https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-193.jpg') no-repeat center/cover;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+    }
+    .hero p {
+      font-size: 1.5rem;
+    }
+    .section {
+      padding: 2rem 1rem;
+      margin: 2rem auto;
+      width: 90%;
+      max-width: 800px;
+      background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      border: 3px solid #006d5b;
+      position: relative;
+      transform: scale(1);
+      transition: transform 0.3s;
+    }
+    .section:hover {
+      transform: scale(1.02);
+    }
+    .section h2 {
+      font-size: 2rem;
+      color: #006d5b;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .section ul li {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .section .logo {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      border: 3px solid white;
+      border-radius: 50%;
+      background: white;
+    }
+    .section .bride {
+      top: -25px;
+      left: -25px;
+    }
+    .section .groom {
+      bottom: -25px;
+      right: -25px;
+    }
+    .pictures {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .pictures .frame {
+      width: 250px;
+      height: 250px;
+      perspective: 1000px;
+      background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+      border: 5px solid #006d5b;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    .pictures img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: rotateY(15deg) rotateX(10deg);
+      transition: transform 0.5s ease;
+    }
+    .pictures img:hover {
+      transform: rotateY(0deg) rotateX(0deg) scale(1.05);
+    }
+    footer {
+      background: #006d5b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .toast {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #006d5b;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aishatu ❤️ Mohammed</h1>
+    <nav>
+      <a href="#programme">Programme</a>
+      <a href="#venue">Venue</a>
+      <a href="#donation">Donation</a>
+      <a href="#live">Live Section</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Bismillah</h1>
+    <p>Join us in celebrating the Nikah of Aishatu Musa Adar and Mohammed Husband</p>
+  </div>
+
+  <section id="programme" class="section">
+    <img src="bride-logo.jpg" alt="Bride" class="logo bride">
+    <img src="groom-logo.jpg" alt="Groom" class="logo groom">
+    <h2>Nikah Programme</h2>
+    <ul>
+      <li>📿 Quran Recitation: 10:00 AM</li>
+      <li>🕌 Nikah Ceremony: 11:00 AM</li>
+      <li>🍴 Wedding Feast (Walima): 1:00 PM</li>
+      <li>🎉 Traditional Celebration: 3:00 PM</li>
+    </ul>
+  </section>
+
+  <section id="venue" class="section">
+    <img src="bride-logo.jpg" alt="Bride" class="logo bride">
+    <img src="groom-logo.jpg" alt="Groom" class="logo groom">
+    <h2>Venue</h2>
+    <p>Join us at the serene Masjid Al-Noor Banquet Hall, known for its peaceful and Islamic ambiance. </p>
+  </section>
+
+  <section id="donation" class="section">
+    <img src="bride-logo.jpg" alt="Bride" class="logo bride">
+    <img src="groom-logo.jpg" alt="Groom" class="logo groom">
+    <h2>Donation</h2>
+    <p>Support our journey as a couple by contributing to our honeymoon and Sadaqah fund. <a href="#">Donate here</a>.</p>
+  </section>
+
+  <section id="live" class="section">
+    <img src="bride-logo.jpg" alt="Bride" class="logo bride">
+    <img src="groom-logo.jpg" alt="Groom" class="logo groom">
+    <h2>Live Section</h2>
+    <p>Unable to attend in person? Join us virtually for the live streaming of the Nikah. <a href="#">Watch live</a>.</p>
+  </section>
+
+  <section class="section">
+    <img src="bride-logo.jpg" alt="Bride" class="logo bride">
+    <img src="groom-logo.jpg" alt="Groom" class="logo groom">
+    <h2>Pre-Wedding Pictures</h2>
+    <div class="pictures">
+      <div class="frame"><img src="prewedding1.jpg" alt="Pre-Wedding 1"></div>
+      <div class="frame"><img src="prewedding2.jpg" alt="Pre-Wedding 2"></div>
+      <div class="frame"><img src="prewedding3.jpg" alt="Pre-Wedding 3"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <img src="bride-logo.jpg" alt="Bride" class="logo bride">
+    <img src="groom-logo.jpg" alt="Groom" class="logo groom">
+    <h2>Post-Wedding Pictures</h2>
+    <div class="pictures">
+      <div class="frame"><img src="postwedding1.jpg" alt="Post-Wedding 1"></div>
+      <div class="frame"><img src="postwedding2.jpg" alt="Post-Wedding 2"></div>
+      <div class="frame"><img src="postwedding3.jpg" alt="Post-Wedding 3"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Aishatu & Mohammed's Wedding. All Rights Reserved. Alhamdulillah!</p>
+  </footer>
+
+  <div class="toast" id="toast">Thank you for visiting our Nikah page!</div>
+
+  <script>
+    // Show toast on page load
+    window.onload = function () {
+      const toast = document.getElementById('toast');
+      toast.style.display = 'block';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 5000);
+    };
+  </script>
+</body>
+</html>
