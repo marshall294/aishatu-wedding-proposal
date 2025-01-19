@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: 'Georgia', serif;
-      margin: 0;
+      margin: 20px;
       padding: 0;
       background: #f3f3f3;
     }
@@ -72,6 +72,22 @@
       font-size: 1.1rem;
       font-weight: bold;
       color: #333;
+    }
+    .section .logo {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      border: 3px solid white;
+      border-radius: 50%;
+      background: white;
+    }
+    .section .bride {
+      top: -25px;
+      left: -25px;
+    }
+    .section .groom {
+      bottom: -25px;
+      right: -25px;
     }
     .section iframe {
       width: 100%;
@@ -141,6 +157,8 @@
   </div>
 
   <section id="programme" class="section">
+    <img src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-193.jpg" alt="Bride" class="logo bride">
+    <img src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-193.jpg" alt="Groom" class="logo groom">
     <h2>Nikah Programme</h2>
     <ul>
       <li>📿 Quran Recitation: 10:00 AM</li>
@@ -151,6 +169,8 @@
   </section>
 
   <section id="venue" class="section">
+    <img src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-193.jpg" alt="Bride" class="logo bride">
+    <img src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-193.jpg" alt="Groom" class="logo groom">
     <h2>Venue</h2>
     <p>Join us at the serene Masjid Al-Noor Banquet Hall, known for its peaceful and Islamic ambiance.</p>
     <h3>Find us on the map:</h3>
@@ -160,11 +180,15 @@
   </section>
 
   <section id="donation" class="section">
+    <img src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-193.jpg" alt="Bride" class="logo bride">
+    <img src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-193.jpg" alt="Groom" class="logo groom">
     <h2>Donation</h2>
     <p>Support our journey as a couple by contributing to our honeymoon and Sadaqah fund. <a href="#">Donate here</a>.</p>
   </section>
 
   <section id="live" class="section">
+    <img src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-193.jpg" alt="Bride" class="logo bride">
+    <img src="https://crystallinestudio.com/category_image/thumbs/Crystalline-photography-193.jpg" alt="Groom" class="logo groom">
     <h2>Live Section</h2>
     <p>Unable to attend in person? Join us virtually for the live streaming of the Nikah.</p>
     <iframe 
@@ -196,6 +220,7 @@
   <div class="toast" id="toast">Thank you for visiting our Nikah page!</div>
 
   <script>
+    // Show toast
     // Show toast on page load
     window.onload = function () {
       const toast = document.getElementById('toast');
